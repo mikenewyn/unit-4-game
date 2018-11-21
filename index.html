@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+
+</head>
+
+<body>
+    <!-- Create heading for the game -->
+    <h1>Crystal Collector</h1>
+    
+    <!-- Write in directions -->
+    <div class="box1">
+        <h3>How to play:</h3>
+        <p>The goal is to meet the "Target Number" by clicking on the crystals.</p>
+        <p>Each crystal is randomly given a value at the beginning of the game, but you don't know what it is until you click it.</p>
+        <p>If you hit the target number, you WIN! But we careful, if you go over, you LOSE!</p>
+        <p>The game will reset once you win or lose, and will keep track of your wins and losses.</p>
+        <p></p>
+    </div>
+    <!-- Create box that inserts random number to match (between 19-120), this needs to reset each a new game starts -->
+    
+    <div class="box2">
+        <h3>Target Number: <span id="randomNumber"></span></h3>
+    </div>        
+    
+    <!-- Wins vs. Losses box, after each game this will be added to based on if the player wins or loses -->
+    
+    <div class="box2">
+        <p>Wins:<div id="updateWin"></div></p>
+        <p>Losses:<div id="updateLoss"></div></p>
+    </div>
+    
+    <!-- Player's Current Score  -->
+
+    <div class="box3">
+        <p>Current Game Score:<div id="currentScore"></div></p>
+    </div>
+
+    <!-- Crystal Images-->
+
+    <div id="crystals"></div>
+
+    <!--  -->
+<script src="assets/javascript/game.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
